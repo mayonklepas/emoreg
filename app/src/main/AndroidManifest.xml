@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bmkg.emoreg">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".lainlain.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".lainlain.KirimPesanActivity" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <activity android:name=".usulan.InputUsulanActivity" />
+        <activity android:name=".status.StatusActivity" />
+        <activity android:name=".masukan.MasukanActivity" />
+        <activity android:name=".kendala.KendalaActivity" />
+        <activity android:name=".rapat.RapatActivity" />
+        <activity android:name=".status.InputstatusActivity" />
+        <activity android:name=".masukan.MasukanInputActivity"></activity>
+        <activity android:name=".kendala.KendalaInputActivity"></activity>
+        <activity android:name=".rapat.RapatInputActivity"></activity>
+    </application>
+
+</manifest>
